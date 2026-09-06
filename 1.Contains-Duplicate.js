@@ -1,4 +1,4 @@
-function hasDuplicatesFast(arr) {
+function containsDuplicate (arr) {
     const seen = new Set();
     return arr.some(item => {
         if (seen.has(item)) return false; // Found a duplicate, stop looping
@@ -7,4 +7,4 @@ function hasDuplicatesFast(arr) {
     });
 }
 
-console.log(hasDuplicatesFast([1,2,3,4,5,6]));
+console.log(containsDuplicate ([1,2,3,4,5,6]));
